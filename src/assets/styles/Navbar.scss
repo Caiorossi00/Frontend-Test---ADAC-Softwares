@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-logo {
+    height: 72px;
+  }
+
+  .navbar-menu {
+    display: none;
+    list-style: none;
+    gap: 2rem;
+
+    li a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .navbar-button {
+    font-weight: 500;
+  }
+
+  @media (min-width: 1024px) {
+    .navbar-menu {
+      display: flex;
+    }
+  }
+}
