@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contents from "./sections/Contents/Contents";
 import Gallery from "./sections/Gallery/Gallery";
+import Partners from "./sections/Partners/Partners";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <Contents />
       <Gallery />
+      <Partners />
       <Footer />
     </>
   );
