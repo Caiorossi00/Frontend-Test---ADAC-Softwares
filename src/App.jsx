@@ -7,6 +7,7 @@ import Gallery from "./sections/Gallery/Gallery";
 import Partners from "./sections/Partners/Partners";
 import Testimonials from "./sections/Testimonials/Testimonials";
 import Footer from "./components/Footer";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Gallery />
       <Partners />
       <Testimonials />
+      <Card />
       <Footer />
     </>
   );
