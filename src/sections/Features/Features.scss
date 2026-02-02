@@ -4,28 +4,97 @@
   text-align: center;
 
   .features-content {
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
   }
 
   .features-title {
-    font-size: 3rem;
+    font-size: 2em;
     margin-bottom: 16px;
     text-transform: uppercase;
   }
 
   .features-text {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 400px;
     margin-bottom: 60px;
   }
 
-  .features-image {
+  .features-layout {
     width: 100%;
-    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .features-images {
+    position: relative;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-image {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+
+    &--main {
+      max-width: 780px;
+    }
+
+    &--overlay {
+      position: absolute;
+      bottom: -40px;
+      right: -15px;
+      max-width: 310px;
+    }
+  }
+
+  .features-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: left;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  .feature-texts {
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      max-width: 320px;
+    }
   }
 }
 
@@ -39,6 +108,30 @@
 
     .features-text {
       font-size: 1.1rem;
+    }
+
+    .features-layout {
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .features-images {
+      width: 100%;
+    }
+
+    .features-image--overlay {
+      position: static;
+      margin-top: 24px;
+    }
+
+    .features-list {
+      align-items: center;
+      text-align: center;
+    }
+
+    .feature-item {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
