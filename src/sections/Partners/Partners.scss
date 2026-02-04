@@ -1,66 +1,91 @@
 .partners {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 
-  &-header {
-    max-width: 620px;
+  .partners-header {
+    max-width: 600px;
+    margin-bottom: 48px;
   }
 
-  &-title {
-    font-size: 48px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
+  .partners-title {
+    font-size: 2rem;
+    margin-bottom: 12px;
   }
 
-  &-text {
-    font-size: 1.25rem;
+  .partners-text {
+    font-size: 1rem;
     line-height: 1.6;
   }
 
-  &-logos {
+  .partners-logos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    margin-bottom: 40px;
 
     img {
-      max-width: 70px;
-      width: 100%;
+      max-height: 48px;
+      max-width: 120px;
       object-fit: contain;
-      transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
+      opacity: 0.9;
+      transition: opacity 0.2s ease;
 
       &:hover {
         opacity: 1;
-        transform: translateY(-2px);
       }
+    }
+  }
+
+  .partners-button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 12px 40px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 15px;
+
+    &:hover {
+      background: #fff;
+      color: #000;
     }
   }
 }
 
 @media (max-width: 768px) {
   .partners {
-    padding: 80px 16px;
+    margin-top: 15vh;
 
-    &-title {
-      font-size: 38px;
+    .partners-text {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      width: 200px;
     }
 
-    &-text {
-      font-size: 16px;
-    }
-
-    &-logos {
-      gap: 32px 40px;
+    .partners-logos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px 32px;
+      max-width: 320px;
+      margin: 0 auto 32px;
 
       img {
-        max-width: 120px;
+        max-width: 48px;
+        max-height: 48px;
+        justify-self: center;
       }
+    }
+
+    .partners-button {
+      padding: 10px 32px;
+      font-size: 0.8rem;
     }
   }
 }

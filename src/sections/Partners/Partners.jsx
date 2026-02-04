@@ -29,6 +29,8 @@ const Partners = () => {
         <img src={logoAirbnb} alt="Airbnb" />
         <img src={logoIbm} alt="IBM" />
       </div>
+
+      <button className="partners-button">All Partners</button>
     </section>
   );
 };
