@@ -1,6 +1,23 @@
 import "./Contents.scss";
-import card01 from "../../assets/images/card01.png";
-import card02 from "../../assets/images/card02.png";
+import macbook from "../../assets/images/contents/Macbook.png";
+import boards from "../../assets/images/contents/Boards.png";
+
+const cards = [
+  {
+    title: "Work",
+    text: "Ever wondered if you're too reliant on a client for work? Slate helps you identify.",
+    button: "Sign Up",
+    image: macbook,
+    variant: "light",
+  },
+  {
+    title: "Design with real data",
+    text: "Ever wondered if you're too reliant on a client for work? Slate helps you identify.",
+    button: "Try For Free",
+    image: boards,
+    variant: "dark",
+  },
+];
 
 const Contents = () => {
   return (
@@ -14,8 +31,21 @@ const Contents = () => {
         </p>
 
         <div className="contents-cards">
-          <img src={card01} alt="Content card 1" className="contents-card" />
-          <img src={card02} alt="Content card 2" className="contents-card" />
+          {cards.map((card, index) => (
+            <div
+              className={`contents-card contents-card--${card.variant}`}
+              key={index}
+            >
+              <h3 className="card-title">{card.title}</h3>
+              <p className="card-text">{card.text}</p>
+
+              <button className="card-button">{card.button}</button>
+
+              <div className="card-image">
+                <img src={card.image} alt={card.title} />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

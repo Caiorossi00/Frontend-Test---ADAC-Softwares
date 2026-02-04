@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: 20vh;
 
   .contents-content {
     max-width: 1100px;
@@ -12,44 +13,126 @@
   }
 
   .contents-title {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 16px;
-    text-transform: uppercase;
   }
 
   .contents-text {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     max-width: 550px;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
+    opacity: 0.85;
   }
 
   .contents-cards {
     display: flex;
+    gap: 32px;
     width: 100%;
     justify-content: center;
   }
 
   .contents-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 40px 32px 32px;
+    max-width: 356px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &--dark {
+      .card-image {
+        background: transparent;
+        margin-top: -40px;
+      }
+    }
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 240px;
+    margin-bottom: 24px;
+    color: #5c5c5c;
+  }
+
+  .card-button {
+    background: #4452fe;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-bottom: 32px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .card-image {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+
+    img {
+      width: 100%;
+      max-width: 340px;
+      display: block;
+    }
   }
 }
-
 @media (max-width: 768px) {
   .contents {
-    padding: 80px 16px;
+    margin-top: 20vh;
 
-    .contents-title {
-      font-size: 2.4rem;
+    .contents-content {
+      padding: 0 60px;
     }
 
     .contents-text {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      margin-bottom: 40px;
     }
 
     .contents-cards {
       flex-direction: column;
-      gap: 24px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .contents-card {
+      max-width: 100%;
+      padding: 32px 24px;
+      gap: 10px;
+
+      &--dark {
+        .card-image {
+          margin-top: -24px;
+        }
+      }
+    }
+
+    .card-text {
+      max-width: 100%;
+    }
+
+    .card-image {
+      justify-content: center;
+
+      img {
+        max-width: 280px;
+      }
     }
   }
 }
