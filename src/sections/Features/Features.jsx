@@ -53,14 +53,14 @@ const Features = () => {
           <div className="features-list">
             {featuresList.map((item, index) => (
               <div className="feature-item" key={index}>
-                <div className="feature-icon">
-                  <img src={item.icon} alt="" />
+                <div className="feature-header">
+                  <div className="feature-icon">
+                    <img src={item.icon} alt="" />
+                  </div>
+                  <h3 className="feature-title">{item.title}</h3>
                 </div>
 
-                <div className="feature-texts">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
+                <p className="feature-description">{item.description}</p>
               </div>
             ))}
           </div>
