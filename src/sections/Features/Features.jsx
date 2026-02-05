@@ -3,7 +3,7 @@ import featureCard1 from "../../assets/images/features/ChatBot.png";
 import featureCard2 from "../../assets/images/features/Line-chart.png";
 import restaurant from "../../assets/images/features/restaurant.png";
 import alien from "../../assets/images/features/alien.png";
-import vector from "../../assets/images/features/vector.png";
+import infinity from "../../assets/images/features/infinity.png";
 
 const featuresList = [
   {
@@ -19,7 +19,7 @@ const featuresList = [
       "When you add work to your Slate calendar we automatically calculate useful insights",
   },
   {
-    icon: vector,
+    icon: infinity,
     title: "Or with rules",
     description:
       "When you add work to your Slate calendar we automatically calculate useful insights",
