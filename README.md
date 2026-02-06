@@ -97,7 +97,7 @@ A estilização foi realizada com **SCSS**, priorizando maior controle sobre est
 
 O vídeo abaixo demonstra o fluxo completo da aplicação:
 
-▶️ https://www.youtube.com/
+▶️ https://www.youtube.com/watch?v=9js1O_kB8I8
 
 ---
 
