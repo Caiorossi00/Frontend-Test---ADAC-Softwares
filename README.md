@@ -6,7 +6,6 @@ A aplicação foi construída utilizando **React**, com foco em **componentizaç
 
 Todo o desenvolvimento respeitou as boas práticas de frontend, priorizando clareza estrutural, separação de responsabilidades e consistência visual entre as seções, conforme esperado em um cenário real de desenvolvimento.
 
----
 
 ## Escopo Atendido
 
@@ -27,7 +26,6 @@ Todo o desenvolvimento respeitou as boas práticas de frontend, priorizando clar
 - **Estilização e Layout**
   - Fidelidade visual ao layout proposto no Figma
 
----
 
 ## Estrutura de Pastas
 
@@ -65,7 +63,6 @@ Responsável pelas seções da landing page, cada uma isolada em seu próprio di
 As seções atuam como blocos independentes de layout, facilitando ajustes pontuais, reordenação de conteúdo e futuras expansões da página.  
 Cada section possui seu conteúdo específico e sua própria folha de estilização dentro da pasta do componente.
 
----
 
 ## Fidelidade ao Design (Pixel Perfect)
 
@@ -81,7 +78,6 @@ Durante a implementação, foi adotada uma abordagem de **pixel perfect**, com a
 
 Essa atenção aos detalhes garante que a interface final se mantenha consistente com o design proposto, tanto em desktop quanto em tablet e dispositivos móveis, refletindo um cuidado essencial em projetos reais de frontend orientados por design.
 
----
 
 ## Possibilidades de Melhoria
 
@@ -91,7 +87,6 @@ Uma das principais melhorias seria a **adoção do Tailwind CSS**, buscando atin
 
 A estilização foi realizada com **SCSS**, priorizando maior controle sobre estilos específicos, organização de regras e reutilização por meio de variáveis e aninhamento. Essa escolha se deu tanto pela familiaridade quanto pela necessidade de um controle mais fino sobre o layout para garantir fidelidade ao design do Figma. Em projetos maiores, o uso de Tailwind poderia complementar ou substituir essa abordagem, dependendo dos requisitos e do padrão adotado no projeto.
 
----
 
 ## Vídeo Demo
 
@@ -99,7 +94,6 @@ O vídeo abaixo demonstra o fluxo completo da aplicação:
 
 ▶️ https://www.youtube.com/watch?v=9js1O_kB8I8
 
----
 
 ## Deploy
 
@@ -107,8 +101,7 @@ A aplicação está disponível online no seguinte endereço:
 
 🔗 https://frontend-test-adac-softwares-ruby.vercel.app/
 
----
 
 ## Preview da Aplicação
 
-![Preview da aplicação](./src/assets/images/preview.png)
+![Preview da aplicação](https://github.com/Caiorossi00/Frontend-Test---ADAC-Softwares/blob/main/src/assets/images/UI.png?raw=true)
