@@ -11,26 +11,43 @@ const Partners = () => {
   return (
     <section className="partners">
       <div className="partners-header">
-        <h2 className="partners-title">Partners</h2>
-        <p className="partners-text">
+        <h2 className="partners-title" data-aos="fade-up">
+          Partners
+        </h2>
+
+        <p className="partners-text" data-aos="fade-up" data-aos-delay="150">
           We focus on ergonomics and meeting you where you work.
           <br />
           It's only a keystroke away.
         </p>
       </div>
 
-      <div className="partners-logos">
-        <img src={logoApple} alt="Apple App Store" />
-
-        <img src={logoApiary} alt="Apiary" />
-        <img src={logoAndroid} alt="Android" />
-
-        <img src={logoBasecamp} alt="Basecamp" />
-        <img src={logoAirbnb} alt="Airbnb" />
-        <img src={logoIbm} alt="IBM" />
+      <div className="partners-logos" data-aos="zoom-in">
+        {[
+          logoApple,
+          logoApiary,
+          logoAndroid,
+          logoBasecamp,
+          logoAirbnb,
+          logoIbm,
+        ].map((logo, index) => (
+          <img
+            key={index}
+            src={logo}
+            alt=""
+            data-aos="zoom-in"
+            data-aos-delay={index * 100}
+          />
+        ))}
       </div>
 
-      <button className="partners-button">All Partners</button>
+      <button
+        className="partners-button"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        All Partners
+      </button>
     </section>
   );
 };

@@ -18,8 +18,11 @@ const Gallery = () => {
   return (
     <section className="gallery">
       <div className="gallery-header">
-        <h2 className="gallery-title">Gallery</h2>
-        <p className="gallery-text">
+        <h2 className="gallery-title" data-aos="fade-up">
+          Gallery
+        </h2>
+
+        <p className="gallery-text" data-aos="fade-up" data-aos-delay="150">
           We focus on ergonomics and meeting you where you work.
           <br />
           It's only a keystroke away.
@@ -28,27 +31,49 @@ const Gallery = () => {
 
       <div className="gallery-desktop">
         <div className="gallery-flex">
-          <img src={Card1_1} alt="" />
-          <img src={Card1_2} alt="" />
-          <img src={Card1_3} alt="" />
-          <img src={Card1_4} alt="" />
+          {[Card1_1, Card1_2, Card1_3, Card1_4].map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt=""
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+            />
+          ))}
         </div>
 
         <div className="gallery-grid">
-          <img src={Card2_1} alt="" />
-          <img src={Card2_2} alt="" />
-          <img src={Card2_3} alt="" />
+          {[Card2_1, Card2_2, Card2_3].map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt=""
+              data-aos="zoom-in"
+              data-aos-delay={index * 120}
+            />
+          ))}
         </div>
       </div>
 
       <div className="gallery-mobile">
-        <img src={mobile} alt="" />
-        <img src={mobile1} alt="" />
-        <img src={mobile2} alt="" />
-        <img src={mobile3} alt="" />
+        {[mobile, mobile1, mobile2, mobile3].map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt=""
+            data-aos="fade-up"
+            data-aos-delay={index * 120}
+          />
+        ))}
       </div>
 
-      <button className="gallery-button">See more</button>
+      <button
+        className="gallery-button"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        See more
+      </button>
     </section>
   );
 };

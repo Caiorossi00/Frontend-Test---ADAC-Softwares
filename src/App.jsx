@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Hero from "./sections/Hero/Hero";
 import Features from "./sections/Features/Features";
 import "./App.css";
@@ -10,6 +13,15 @@ import Footer from "./components/Footer";
 import Card from "./components/Card";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      offset: 250,
+    });
+  }, []);
+
   return (
     <>
       <Navbar />

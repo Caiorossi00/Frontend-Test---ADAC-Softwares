@@ -30,8 +30,11 @@ const Features = () => {
   return (
     <section className="features">
       <div className="features-content">
-        <h2 className="features-title">Features</h2>
-        <p className="features-text">
+        <h2 className="features-title" data-aos="fade-up">
+          Features
+        </h2>
+
+        <p className="features-text" data-aos="fade-up" data-aos-delay="150">
           Most calendars are designed for teams. Slate is designed for
           freelancers who want a simple way to plan their schedule.
         </p>
@@ -42,17 +45,25 @@ const Features = () => {
               src={featureCard1}
               alt=""
               className="features-image features-image--main"
+              data-aos="fade-right"
             />
             <img
               src={featureCard2}
               alt=""
               className="features-image features-image--overlay"
+              data-aos="fade-left"
+              data-aos-delay="150"
             />
           </div>
 
           <div className="features-list">
             {featuresList.map((item, index) => (
-              <div className="feature-item" key={index}>
+              <div
+                className="feature-item"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+              >
                 <div className="feature-header">
                   <div className="feature-icon">
                     <img src={item.icon} alt="" />

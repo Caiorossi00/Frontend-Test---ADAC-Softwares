@@ -23,9 +23,11 @@ const Contents = () => {
   return (
     <section className="contents">
       <div className="contents-content">
-        <h2 className="contents-title">Contents</h2>
+        <h2 className="contents-title" data-aos="fade-up">
+          Contents
+        </h2>
 
-        <p className="contents-text">
+        <p className="contents-text" data-aos="fade-up" data-aos-delay="150">
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.
         </p>
@@ -35,13 +37,20 @@ const Contents = () => {
             <div
               className={`contents-card contents-card--${card.variant}`}
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
             >
               <h3 className="card-title">{card.title}</h3>
+
               <p className="card-text">{card.text}</p>
 
               <button className="card-button">{card.button}</button>
 
-              <div className="card-image">
+              <div
+                className="card-image"
+                data-aos="zoom-in"
+                data-aos-delay={index * 200 + 150}
+              >
                 <img src={card.image} alt={card.title} />
               </div>
             </div>
